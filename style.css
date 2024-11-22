@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #555;
+}
+
+/* Main Sections */
+main section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#detect-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.ai-btn {
+    background-color: #17a2b8;
+    color: white;
+    margin-right: 10px;
+}
+
+#resolve-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Results */
+#detection-result, #prevention-result, #resolution-result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Graph Section */
+#deadlock-graph {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+}
+
+#historical-graph {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+/* User Guide */
+#user-guide {
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadlock Recovery System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 Advanced Deadlock Recovery System</h1>
+            <p>A smarter system to detect, predict, and resolve deadlocks with AI-like recommendations.</p>
+        </header>
+
+        <main>
+            <section id="input-section">
+                <h2>🔍 Deadlock Detection</h2>
+                <div class="form-group">
+                    <label for="process-id">Process ID (Numeric)</label>
+                    <input type="number" id="process-id" placeholder="Enter Process ID" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="resource-id">Resource ID (Numeric)</label>
+                    <input type="number" id="resource-id" placeholder="Enter Resource ID" min="1">
+                </div>
+                <button id="detect-btn">Detect Deadlock</button>
+                <p id="detection-result"></p>
+            </section>
+
+            <section id="prevention-section">
+                <h2>🛡️ Deadlock Prevention</h2>
+                <button class="ai-btn" data-action="Analyze Patterns">Analyze Patterns</button>
+                <button class="ai-btn" data-action="Recommend Actions">Recommend Actions</button>
+                <div id="prevention-result"></div>
+            </section>
+
+            <section id="resolution-section">
+                <h2>🛠️ Deadlock Resolution</h2>
+                <label for="strategy-selection">Select Resolution Strategy:</label>
+                <select id="strategy-selection">
+                    <option value="Thread Termination">Thread Termination</option>
+                    <option value="Resource Preemption">Resource Preemption</option>
+                    <option value="Priority Adjustment">Priority Adjustment</option>
+                    <option value="Rollback Strategy">Rollback Strategy</option>
+                    <option value="Boost Priority">Boost Priority</option>
+                </select>
+                <button id="resolve-btn">Resolve Deadlock</button>
+                <p id="resolution-result"></p>
+            </section>
+
+            <section id="graph-section">
+                <h2>📊 Deadlock Visualization</h2>
+                <canvas id="deadlock-graph" width="400" height="400"></canvas>
+            </section>
+
+            <section id="historical-section">
+                <h2>📈 Historical Resource Allocation</h2>
+                <canvas id="historical-graph" width="400" height="400"></canvas>
+            </section>
+
+            <section id="user-guide">
+                <h2>📝 User Guide</h2>
+                <p>Learn how deadlocks occur and how the system resolves them. Follow the steps below:</p>
+                <ul>
+                    <li>Step 1: Enter Process IDs and Resource IDs.</li>
+                    <li>Step 2: Detect if a deadlock exists.</li>
+                    <li>Step 3: Choose a resolution strategy or let the AI suggest the best option.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Deadlock Recovery System. AI-enhanced and advanced simulation for effective recovery.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
